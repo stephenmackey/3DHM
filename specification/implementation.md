@@ -47,15 +47,15 @@ The package should contain general Descriptive Metadata about the digitised obje
 ### 4.2.2	Preservation Metadata
 Good practice in the management of 3D Heritage Model data requires that Information Packages include Preservation Metadata, specifically information related to:
 
-•	Provenance
-•	Reference
-•	Fixity
-•	Context
+-	Provenance
+-	Reference
+-	Fixity
+-	Context
 
 According to the CSPM: “When using Preservation Metadata together with the Common Specification for Information Packages (CSIP) (http://earkcsip.dilcis.eu), it is recommended that these are included in the information package in PREMIS format. Although this is not mandatory, all tools claiming to be able to validate CSIP compliant Information Packages must also be able to validate PREMIS metadata once it exists within the package. The two high-level requirements for the use of PREMIS in Common Specification IPs are that:
 
-•	All Preservation Metadata is created according to official PREMIS guidelines;
-•	All PREMIS metadata is referenced from the amdSec/digiprovMD element of the appropriate METS file.
+-	All Preservation Metadata is created according to official PREMIS guidelines;
+-	All PREMIS metadata is referenced from the amdSec/digiprovMD element of the appropriate METS file.
 
 It is recommended that users review the CSPM.
 
@@ -98,7 +98,7 @@ CSIP specifies that METS files should be located at the root of the package fold
 #### 4.3.2	Root METS File
 The root METS file must adhere to the requirements of the CSIP and Information Package specifications. In addition, there are specific requirements for CITS 3DHM and in some cases, the level of the CSIP or package requirements have been increased (but never decreased).
 
-<a name="Section4.3.3><a/>
+<a name="Section4.3.3"><a/>
 
 #### 4.3.3	Root METS root element
 CITS 3DHM does not change or extend any of the requirements for the Root METS root element. Information is given below regarding the specific content type attributes to be used in CITS 3DHM.
@@ -201,7 +201,7 @@ Use of controlled vocabularies for the values of semantic units is encouraged wi
 
 <a name="Section4.2.3"><a/>
 
-### 4.2.3	Use of PREMIS at package level
+### 4.4.3	Use of PREMIS at package level
 PREMIS can be used in addition METS at package level to record Preservation and Rights Metadata. Note that if PREMIS is used then the requirements of the CSPM apply and those provided by the CITS 3DHM are in addition to these.
 
 **3DHM65** Preservation information for the entire package (e.g. provenance, preservation actions) MAY be recorded within a PREMIS file located in the metadata/preservation folder and must follow guidelines set out in CSPM. 
@@ -210,10 +210,10 @@ PREMIS can be used in addition METS at package level to record Preservation and 
 
 <a name="Section4.2.4"><a/>
 
-### 4.2.4	Use of PREMIS at Representation level
+### 4.4.4	Use of PREMIS at Representation level
 PREMIS can be used in addition METS at Representation level to record Preservation and Rights Metadata. Preservation information can include details of the object creating application via the creatingApplication semantic container and the required rendering environment via the Environment entity. Note that if PREMIS is used then the requirements of the CITS Preservation apply and those provided by the CITS 3DHM are in addition to these.
 
-**3DHM67:** Preservation information for each Representation (e.g. provenance, preservation actions, creating application, rendering environment) MAY be recorded within a PREMIS file located in the representation/metadata/preservation folder and must follow guidelines set out in CITS PREMIS. 
+**3DHM67:** Preservation information for each Representation (e.g. provenance, preservation actions, creating application, rendering environment) MAY be recorded within a PREMIS file located in the representation/metadata/preservation folder and must follow guidelines set out in CSPM. 
 
 **3DHM68** Rights information for specific Representations of the 3D model (e.g. copyright, license, other, rights grants) MAY be recorded within a PREMIS file located in the metadata/preservation folder of each Representation using the PREMIS Rights semantic unit and must follow the guidelines set out in CSPM. Each individual rights statement (copyright, licence,  other, rights granted) must be held in a separate rightsStatement. Designation of the basis for the right or permission can be taken from the vocabulary available at: http://id.loc.gov/vocabulary/preservation/rightsBasis.html which are: license, copyright, statute, other. Information on rights associated with the rights basis can be included within the otherRightsInformation PREMIS semantic unit container using values from available controlled vocabularies.
 
