@@ -6,7 +6,7 @@
 
 The CITS 3DHM CITS inherits its package structure from the E-ARK Common Specification for Information Packages and is shown in [Figure 3](#fig3). It can be seen that additional folders have been added for Paradata, Other and optionally Authentication Documentation at root and representation level, but otherwise the structure is identical. 
 
-<a name="fig3"></a>\
+<a name="fig3"></a>
 
 ![Example Information Package Folder Structure](/specification/figs/fig_2_data_model_structure.svg "Data Model Structure")
 
